@@ -1,6 +1,6 @@
 .navbar {
-  background-color: black;
-  border-bottom: 1px solid white;
+  background-color: white;
+  border-bottom: 1px solid black;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@
 }
 
 .nav-logo {
-  color: white;
+  color: #414789;
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
@@ -40,12 +40,18 @@
 }
 
 .nav-button {
-  background-color: #41c345;
+  background-color: #414789;
   border-radius: 10px;
+}
+
+.button-links { 
+  color: white;
 }
 
 .button-links:hover {
   color: black;
+  background-color:  #ffa00e;
+  border-radius: 10px;
 }
 
 .nav-button-item {
@@ -65,7 +71,7 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: #ffa00e;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
@@ -88,12 +94,12 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: white;
+  background: #414789;
 }
 
 .nav-item .active {
-  color: #41c345;
-  border: 1px solid white;
+  color: #414789;
+  border: 1px solid #ffa00e;
 }
 .nav-icon {
   display: none;
@@ -104,7 +110,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 1pxsolid #fff;
+    border-top: 1px solid black;
     position: absolute;
     top: 80px;
     left: -110%;
@@ -114,14 +120,14 @@
   }
 
   .nav-menu.active {
-    background: black;
+    background: white;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
   .nav-item .active {
-    color: #41c345;
+    color: #414789;
     border: none;
   }
   .nav-links {
@@ -146,6 +152,6 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: white;
+    color: black;
   }
 }

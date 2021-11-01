@@ -45,7 +45,7 @@ const NavBar = () => {
                     </li>
                     <li className="nav-button-item" >
                         <div className="nav-button">
-                        <NavLink exact to="/submit" activeClassName="active" className="nav-links button-links" onClick={handleLinkClick}>
+                        <NavLink exact to="/submit" activeClassName="active" className="nav-links button-links" style={{color: "white"}} onClick={handleLinkClick}>
                             Submit A Listing
                                 </NavLink>
                                 </div>
