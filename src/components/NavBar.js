@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import rariLogo from '../images/rari.png'
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -20,8 +19,7 @@ const NavBar = () => {
         <nav className="navbar" >
             <div className="nav-container" >
                     <NavLink exact to="/" className="nav-logo" >
-                        <img src={rariLogo} alt="rari-logo" className="rari-logo" />
-                    Charity Vaults
+                    CampusLease
         </NavLink>
 
                 <ul className={isOpen ? "nav-menu active" : "nav-menu"} >
@@ -31,24 +29,24 @@ const NavBar = () => {
                         </NavLink>
                     </li>
                     <li className="nav-item" >
-                        <NavLink exact to="/create" activeClassName="active" className="nav-links" onClick={handleLinkClick}>
-                            Create
+                        <NavLink exact to="/about" activeClassName="active" className="nav-links" onClick={handleLinkClick}>
+                            About
                                 </NavLink>
                     </li>
                     <li className="nav-item" >
-                        <NavLink exact to="/deposit" activeClassName="active" className="nav-links" onClick={handleLinkClick}>
-                            Deposit
+                        <NavLink exact to="/explore" activeClassName="active" className="nav-links" onClick={handleLinkClick}>
+                            Explore
                                 </NavLink>
                     </li>
                     <li className="nav-item" >
-                        <NavLink exact to="/withdraw" activeClassName="active" className="nav-links" onClick={handleLinkClick}>
-                            Withdraw
+                        <NavLink exact to="/contact" activeClassName="active" className="nav-links" onClick={handleLinkClick}>
+                            Contact
                                 </NavLink>
                     </li>
                     <li className="nav-button-item" >
                         <div className="nav-button">
-                        <NavLink exact to="/connect" activeClassName="active" className="nav-links button-links" onClick={handleLinkClick}>
-                            Connect
+                        <NavLink exact to="/submit" activeClassName="active" className="nav-links button-links" onClick={handleLinkClick}>
+                            Submit A Listing
                                 </NavLink>
                                 </div>
                     </li>

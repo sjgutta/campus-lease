@@ -2,31 +2,23 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Button from "../Button/Button"
 import Page from "../Page/Page"
-import { useSelector } from "react-redux"
 import "./Home.css"
 
 
 const Home = () => {
-    const buttonClick = () => {
-        console.log("Clicked!");
-    }
-
-    const testToggle = useSelector(state => state.test.testToggle);
-    console.log(testToggle);
-
     return (
         <Page>
-            <h1 className="home-header">A New Way To Donate</h1>
+            <h1 className="home-header">A New Way To Sublease</h1>
             <div className="home-details-container">
-                <p className="home-details-paragraph">Deposit Assets.</p>
-                <p className="home-details-paragraph">Accrue Interest.</p>
-                <p className="home-details-paragraph">Donate A % Of Your Interest To Charity.</p>
+                <p className="home-details-paragraph">List your apartment.</p>
+                <p className="home-details-paragraph">Connect with potential subleasers.</p>
+                <p className="home-details-paragraph">Find your new college home.</p>
             </div>
             <div className="home-buttons-container">
-                <NavLink exact to="/create">
-                    <Button isDark={true} onClick={buttonClick}>I'm a Charity</Button>
+                <NavLink exact to="/explore">
+                    <Button isDark={true}>I'm A Subleaser</Button>
                 </NavLink>
-                <NavLink exact to="/connect">
+                <NavLink exact to="/submit">
                     <Button>Get Started</Button>
                 </NavLink>
             </div>

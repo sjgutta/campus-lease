@@ -1,12 +1,7 @@
 import { createContext } from 'react'
 
-export const RariContextDefaultValue = {
-    web3provider: null,
-    web3signer: null,
-    setProvider: () => {},
-    setSigner: () => {},
-}
+export const CampusLeaseContextDefaultValue = {}
 
-const RariContext = createContext(RariContextDefaultValue);
+const CampusLeaseContext = createContext(CampusLeaseContextDefaultValue);
 
-export default RariContext;
+export default CampusLeaseContext;
