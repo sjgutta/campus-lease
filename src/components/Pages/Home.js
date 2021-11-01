@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Button from "../Button/Button"
+import StartNow from "../StartNow/StartNow"
 import Page from "../Page/Page"
+import bannerImage from '../../images/campusleasebanner.png'
 import "./Home.css"
 
 
@@ -22,6 +24,16 @@ const Home = () => {
                     <Button>Get Started</Button>
                 </NavLink>
             </div>
+            <div className="banner-image-container">
+                <img src={bannerImage} alt="banner-image" />
+            </div>
+            <div className="one-line-description-container">
+                <h3>WHAT IS CAMPUSLEASE?</h3>
+                <p className="description-paragraph">
+                    CampusLease is a 2-sided marketplace where students can list their apartment for sublease or find their next home.
+                </p>
+            </div>
+            <StartNow />
         </Page>
     )
 }

@@ -33,6 +33,41 @@
     padding-right: 20%;
 }
 
+.banner-image-container {
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.banner-image-container img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.one-line-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin-top: 50px;
+}
+
+.one-line-description-container h3 {
+    font-size: 24px;
+    color: #414789;
+}
+
+.one-line-description-container p {
+    margin-top: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+
 @media screen and (max-width: 1015px) {
     .home-details-container {
         padding-left: 10%;
