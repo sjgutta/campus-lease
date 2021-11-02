@@ -25,3 +25,14 @@
 .founding-story-paragraph {
     margin-bottom: 40px;
 }
+
+.about-grid-container {
+    width: 90%;
+    margin-top: 50px;
+    border-top: 1px solid black;
+}
+
+.about-grid-container h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}

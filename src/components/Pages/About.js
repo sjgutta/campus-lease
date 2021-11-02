@@ -3,6 +3,7 @@ import Page from "../Page/Page";
 import AboutBanner from "../../images/aboutbanner.png";
 import bannerImage from '../../images/campusleasebanner.png'
 import "./About.css"
+import { Container, Row, Col } from 'react-grid-system';
 
 
 const About = () => {
@@ -27,6 +28,33 @@ const About = () => {
                 <p className="founding-story-paragraph">
                     Furthermore, CampusLease is perfect for a college student seeking a new place to live. Subleasing your new apartment from another student can lead to discounted rent while helping a fellow student out. We provide a focused inventory of verified, high quality listings from real students. With CampusLease, you can find your new college home.
             </p>
+            </div>
+            <div className="about-grid-container">
+                <h2>
+                    Our Services
+                </h2>
+                <Container>
+                    <Row>
+                        <Col sm={4}>
+                            Item 1
+                        </Col>
+                        <Col sm={4}>
+                            Item 2
+                        </Col>
+                        <Col sm={4}>
+                            Item 3
+                        </Col>
+                        <Col sm={4}>
+                            Item 4
+                        </Col>
+                        <Col sm={4}>
+                            Item 5
+                        </Col>
+                        <Col sm={4}>
+                            Item 6
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </Page>
     )
