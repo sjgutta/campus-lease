@@ -35,4 +35,23 @@
 .about-grid-container h2 {
     margin-top: 50px;
     font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.about-grid-item-header {
+    color: #ffa00e;
+    font-size: 24px;
+    text-align: left;
+}
+
+.about-grid-item-paragraph {
+    margin-top: 5px;
+    color: #414789;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-grid-icon-paragraph {
+    text-align: left;
 }

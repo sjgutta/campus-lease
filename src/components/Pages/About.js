@@ -4,6 +4,25 @@ import AboutBanner from "../../images/aboutbanner.png";
 import bannerImage from '../../images/campusleasebanner.png'
 import "./About.css"
 import { Container, Row, Col } from 'react-grid-system';
+import { BsFillGearFill } from "react-icons/bs";
+import { MdVerified, MdVisibility } from "react-icons/md";
+import { AiOutlineSearch, AiFillTag } from "react-icons/ai";
+import { GiProcessor } from "react-icons/gi";
+import StartNow from "../StartNow/StartNow"
+
+
+
+const AboutGridItem = (props) => {
+    return (
+        <>
+            <p className="about-grid-icon-paragraph">
+                {props.Icon}
+            </p>
+            <h4 className="about-grid-item-header">{props.headerText}</h4>
+            <p className="about-grid-item-paragraph">{props.paragraphText}</p>
+        </>
+    )
+}
 
 
 const About = () => {
@@ -36,26 +55,29 @@ const About = () => {
                 <Container>
                     <Row>
                         <Col sm={4}>
-                            Item 1
+                            <AboutGridItem Icon={<BsFillGearFill />} headerText="Smooth Listing Process" paragraphText="Listing your apartment is smooth and easy. Just click the button at the top right of the page and fill out the form!" />
                         </Col>
                         <Col sm={4}>
-                            Item 2
+                            <AboutGridItem Icon={<MdVerified />} headerText="Listing Verification" paragraphText="All listings on CampusLease are from actual, verified students and are approved as being high quality." />
                         </Col>
                         <Col sm={4}>
-                            Item 3
+                            <AboutGridItem Icon={<AiOutlineSearch />} headerText="Focused Inventory" paragraphText="Unlike housing aggregator websites, CampusLease has a focused inventory of college apartment options." />
+                        </Col>
+                    </Row>
+                    <Row style={{marginTop: "50px"}}>
+                        <Col sm={4}>
+                            <AboutGridItem Icon={<MdVisibility />} headerText="High Visibility" paragraphText="Your listing on CampusLease will receive high visibility, as students know to search here for their next home." />
                         </Col>
                         <Col sm={4}>
-                            Item 4
+                            <AboutGridItem Icon={<GiProcessor />} headerText="Advanced Search" paragraphText="CampusLease provides advanced search and discovery options which will allow you to find your perfect new home." />
                         </Col>
                         <Col sm={4}>
-                            Item 5
-                        </Col>
-                        <Col sm={4}>
-                            Item 6
+                            <AboutGridItem Icon={<AiFillTag />} headerText="Discounted Rent" paragraphText="Subleasing from another student provides an opportunity to reach a deal and receive discounted rent." />
                         </Col>
                     </Row>
                 </Container>
             </div>
+            <StartNow />
         </Page>
     )
 }
