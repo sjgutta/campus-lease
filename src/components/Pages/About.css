@@ -1,27 +1,27 @@
-.create-container {
-    width: 65%;
-    padding-top: 3%
+.banner-container {
+    width: 95%;
 }
 
-.double-input-container {
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.banner-container img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
-.small-input-combo-container {
-    width: 45%;
+.about-one-liner-paragraph {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 70%;
+    font-size: 30px;
 }
 
-.create-buttons-container {
-    margin-top: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 6vh;
+.founding-story-div {
+    width: 70%;
+    color: #414789;
+    font-size: 16px;
 }
 
-.create-buttons-container>.btn {
-    width: 45%;
+.founding-story-paragraph {
+    margin-bottom: 40px;
 }
