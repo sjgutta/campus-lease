@@ -63,3 +63,36 @@
 .create-buttons-container {
 	margin-top: 10vh;
 }
+
+.listing-container {
+	margin-top: 50px;
+	width: 100%;
+	text-align: left;
+}
+
+.listing-content-container {
+	margin-top: 20px;
+}
+
+.listing-image {
+	width: 100%;
+	height: auto;
+}
+
+.listing-name {
+	font-size: 40px;
+	font-weight: bold;
+	color: #414789;
+}
+
+.listing-small-header {
+	font-size: 35px;
+	font-weight: bold;
+	color: #ffa00e;
+}
+
+.listing-paragraph {
+	line-height: 1.6;
+	font-size: 20px;
+	margin-top: 10px;
+}
