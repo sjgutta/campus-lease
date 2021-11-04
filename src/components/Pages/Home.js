@@ -28,9 +28,7 @@ const Home = () => {
                     <Button>Get Started</Button>
                 </NavLink>
             </div>
-            <div className="banner-image-container">
-                <img src={bannerImage} alt="banner-image" />
-            </div>
+            <img className="banner-image" src={bannerImage} alt="banner-image" />
             <StartNow />
         </Page>
     )

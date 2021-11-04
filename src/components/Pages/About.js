@@ -34,9 +34,7 @@ const About = () => {
             <p className="about-one-liner-paragraph">
                 CampusLease is a 2-sided marketplace where students can list their apartment for sublease or find their next home.
             </p>
-            <div className="banner-image-container">
-                <img src={bannerImage} alt="banner-image" />
-            </div>
+            <img className="banner-image" style={{marginTop: "50px", marginBottom: "50px"}} src={bannerImage} alt="banner-image" />
             <div className="founding-story-div">
                 <p className="founding-story-paragraph">
                     College life is unpredictable. At any time, students can be forced to move away from their college campus for any number of reasons including graduating early, studying abroad, or even the unexpected COVID-19 pandemic.
