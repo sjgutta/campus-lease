@@ -1,13 +1,15 @@
 import React from 'react'
 import Page from "../Page/Page"
+import { NavLink } from 'react-router-dom'
 import ContactBanner from "../../images/contactbanner.png";
 import "./Contact.css"
 import InputHeader from "../Input/InputHeader"
 import Input from "../Input/Input"
+import Button from "../Button/Button"
 
 
 const Contact = () => {
-    
+
     return (
         <Page>
             <div className="banner-container">
@@ -18,10 +20,12 @@ const Contact = () => {
                     <InputHeader value="Contact Form" />
                     <div className="input-container">
                         <Input type="text" placeholder="Name"></Input>
-                        <Input type="email" placeholder="Email"></Input>   
+                        <Input type="email" placeholder="Email"></Input>
                         <Input type="textarea" placeholder="Message"></Input>
                     </div>
-                    <a class="nav-links button-links nav-button submit-button" href="/contact" >Send your message</a>      
+                    <NavLink exact to="/contact">
+                        <Button>Send Your Message</Button>
+                    </NavLink>
                 </form>
             </div>
         </Page>
