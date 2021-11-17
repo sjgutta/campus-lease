@@ -106,11 +106,11 @@ input {
     font: 1em sans-serif;
 
     /* Uniform text field size */
-    width: 50%;
     box-sizing: border-box;
+}
 
-    /* Match form field borders */
-    border: 1px solid #999;
+.input-container {
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -132,14 +132,10 @@ textarea:focus {
     border-color: #414789;
 }
 
-textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-
-    /* Provide space to type some text */
-    height: 5em;
+.submit-button {
+    margin-top: 100000px;
 }
 
-label {
-    color: #414789;
+.contact-container {
+    width: 50%;
 }
