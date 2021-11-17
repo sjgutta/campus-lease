@@ -6,6 +6,7 @@ import "./Contact.css"
 import InputHeader from "../Input/InputHeader"
 import Input from "../Input/Input"
 import Button from "../Button/Button"
+import StartNow from "../StartNow/StartNow"
 
 
 const Contact = () => {
@@ -28,6 +29,7 @@ const Contact = () => {
                     </NavLink>
                 </form>
             </div>
+            <StartNow />
         </Page>
     )
 }
