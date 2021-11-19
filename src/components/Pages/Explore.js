@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from "axios";
 import Page from "../Page/Page"
 import "react-toggle/style.css"
 import ExploreBanner from "../../images/explorebanner.png";
@@ -64,11 +65,26 @@ const Listing = (props) => {
 }
 
 const Explore = () => {
+	const [listings, setListings] = useState([]);
+	
+	useEffect(() => {
+		axios.get('http://api.campuslease.com:5000/listings').then(res => {
+        const listings = res.data;
+        setListings(listings.listings);
+      })
+	}, []);
+
+	let noListingsMessage;
+	if(listings.length === 0) {
+		noListingsMessage = <div style={{"margin-top": "40px"}}>No Listings Currently!</div>;
+	}
+
 	return (
 		<Page>
 			<div className="banner-container">
 				<img src={ExploreBanner} alt="explore-banner" />
-				{listingData.map((listing) =>
+				{noListingsMessage}
+				{listings.map((listing) =>
 					<Listing {...listing} />
 				)}
 			</div>
